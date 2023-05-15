@@ -4,7 +4,9 @@ const kilometers = parseInt(document.getElementById('kilometers').value);
 let travelPrice = kilometers * 0.233;
 let finalPrice;
 
-document.addEventListener('click', 
+buyButton = document.querySelector('button')
+
+buyButton.addEventListener('click', 
     function(){
         if (age < 18){
             finalPrice = travelPrice - (travelPrice * (19.4 / 100));

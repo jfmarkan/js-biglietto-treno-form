@@ -75,7 +75,8 @@ buyButton.addEventListener('click',
             break;
             case 'Roma Bari':
             case 'Bari Roma':
-                console.log("Roma Bari")
+                console.log("Roma Bari");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 423.08 KM";
@@ -89,7 +90,8 @@ buyButton.addEventListener('click',
             break;
             case 'Roma Firenze':
             case 'Firenze Roma':
-                console.log("Roma Firenze")
+                console.log("Roma Firenze");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 233.36 KM";
@@ -103,7 +105,8 @@ buyButton.addEventListener('click',
             break;
             case 'Roma Milano':
             case 'Milano Roma':
-                console.log("Roma Milano")
+                console.log("Roma Milano");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 513.52 KM";
@@ -117,7 +120,8 @@ buyButton.addEventListener('click',
             break;
             case 'Roma Torino':
             case 'Torino Roma':
-                console.log("Roma Torino")
+                console.log("Roma Torino");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 636.99 KM";
@@ -131,7 +135,8 @@ buyButton.addEventListener('click',
             break;
             case 'Roma Genova':
             case 'Genova Roma':
-                console.log("Roma Genova")
+                console.log("Roma Genova");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 644.77 KM";
@@ -145,7 +150,8 @@ buyButton.addEventListener('click',
             break;
             case 'Roma Venezia':
             case 'Venezia Roma':
-                console.log("Roma Venezia")
+                console.log("Roma Venezia");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 460.18 KM";
@@ -159,7 +165,8 @@ buyButton.addEventListener('click',
             break;
             case 'Napoli Bari':
             case 'Bari Napoli':
-                console.log("Napoli Bari")
+                console.log("Napoli Bari");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 226.68 KM";
@@ -173,7 +180,8 @@ buyButton.addEventListener('click',
             break;
             case 'Napoli Firenze':
             case 'Firenze Napoli':
-                console.log("Napoli Firenze")
+                console.log("Napoli Firenze");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 424.99 KM";
@@ -187,7 +195,8 @@ buyButton.addEventListener('click',
             break;
             case 'Napoli Milano':
             case 'Milano Napoli':
-                console.log("Napoli Milano")
+                console.log("Napoli Milano");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 705.15 KM";
@@ -201,7 +210,8 @@ buyButton.addEventListener('click',
             break;
             case 'Napoli Torino':
             case 'Torino Napoli':
-                console.log("Napoli Torino")
+                console.log("Napoli Torino");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 828.62 KM";
@@ -215,7 +225,8 @@ buyButton.addEventListener('click',
             break;
             case 'Napoli Genova':
             case 'Genova Napoli':
-                console.log("Napoli Genova")
+                console.log("Napoli Genova");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 836.40 KM";
@@ -229,7 +240,8 @@ buyButton.addEventListener('click',
             break;
             case 'Napoli Venezia':
             case 'Venezia Napoli':
-                console.log("Napoli Venezia")
+                console.log("Napoli Venezia");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 651.81 KM";
@@ -243,7 +255,8 @@ buyButton.addEventListener('click',
             break;
             case 'Bari Firenze':
             case 'Firenze Bari':
-                console.log("Bari Firenze")
+                console.log("Bari Firenze");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 656.44 KM";
@@ -257,7 +270,8 @@ buyButton.addEventListener('click',
             break;
             case 'Bari Milano':
             case 'Milano Bari':
-                console.log("Bari Milano")
+                console.log("Bari Milano");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 936.6 KM";
@@ -271,7 +285,8 @@ buyButton.addEventListener('click',
             break;
             case 'Bari Torino':
             case 'Torino Bari':
-                console.log("Bari Torino")
+                console.log("Bari Torino");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 1060.07 KM";
@@ -285,7 +300,8 @@ buyButton.addEventListener('click',
             break;
             case 'Bari Genova':
             case 'Genova Bari':
-                console.log("Bari Genova")
+                console.log("Bari Genova");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 1067.85 KM";
@@ -299,7 +315,8 @@ buyButton.addEventListener('click',
             break;
             case 'Bari Venezia':
             case 'Venezia Bari':
-                console.log("Bari Venezia")
+                console.log("Bari Venezia");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 883.26 KM";
@@ -313,7 +330,8 @@ buyButton.addEventListener('click',
             break;
             case 'Firenze Milano':
             case 'Milano Firenze':
-                console.log("Firenze Milano")
+                console.log("Firenze Milano");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 290.73 KM";
@@ -327,7 +345,8 @@ buyButton.addEventListener('click',
             break;
             case 'Firenze Torino':
             case 'Torino Firenze':
-                console.log("Firenze Torino")
+                console.log("Firenze Torino");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 421.19 KM";
@@ -341,7 +360,8 @@ buyButton.addEventListener('click',
             break;
             case 'Firenze Genova':
             case 'Genova Firenze':
-                console.log("Genova Firenze")
+                console.log("Genova Firenze");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 440.26 KM";
@@ -355,7 +375,8 @@ buyButton.addEventListener('click',
             break;
             case 'Firenze Venezia':
             case 'Venezia Firenze':
-                console.log("Firenze Venezia")
+                console.log("Firenze Venezia");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 229.27 KM";
@@ -369,7 +390,8 @@ buyButton.addEventListener('click',
             break;
             case 'Milano Torino':
             case 'Torino Milano':
-                console.log("Milano Torino")
+                console.log("Milano Torino");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 130.61 KM";
@@ -383,7 +405,8 @@ buyButton.addEventListener('click',
             break;
             case 'Milano Genova':
             case 'Genova Milano':
-                console.log("Genova Milano")
+                console.log("Genova Milano");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 133.79 KM";
@@ -397,7 +420,8 @@ buyButton.addEventListener('click',
             break;
             case 'Milano Venezia':
             case 'Venezia Milano':
-                console.log("Milano Venezia")
+                console.log("Milano Venezia");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 252.18 KM";
@@ -411,7 +435,8 @@ buyButton.addEventListener('click',
             break;
             case 'Torino Genova':
             case 'Genova Torino':
-                console.log("Torino Genova")
+                console.log("Torino Genova");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 153.52 KM";
@@ -425,7 +450,8 @@ buyButton.addEventListener('click',
             break;
             case 'Torino Venezia':
             case 'Venezia Torino':
-                console.log("Torino Venezia")
+                console.log("Torino Venezia");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 381.88 KM";
@@ -439,7 +465,8 @@ buyButton.addEventListener('click',
             break;
             case 'Genova Venezia':
             case 'Venezia Genova':
-                console.log("Genova Venezia")
+                console.log("Genova Venezia");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 393.3 KM";

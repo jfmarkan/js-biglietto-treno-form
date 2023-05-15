@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div id="ticket" class="mt-5 d-none">
+            <div class="row">
+                <div class="col-5 mx-auto bg-white rounded-4">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="./img/trenitalia-logo.jpg" alt="Trenitalia Logo" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-0 bg-danger text-white px-2">From:</p>
+                            <p id="container-from" class="mt-0 fs-1 border border-danger px-2">
+                                
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-0 bg-danger text-white px-2">To:</p>
+                            <p id="container-to" class="mt-0 fs-1 border border-danger px-2"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-0 bg-danger text-white px-2">Journey</p>
+                            <p id="container-distance" class="px-2"></p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-4 pe-0">
+                            <p class="mb-0 bg-danger text-white px-2">Regular Price</p>
+                                <p id="container-regular-price" class="mt-0 fs-1 border border-danger px-2">
+                                    
+                                </p>
+                        </div>
+                        <div class="col-4 p-0">
+                            <p class="mb-0 bg-light px-2">Discount</p>
+                                <p id="container-discount" class="mt-0 fs-1 border border-light px-2">
+                                    
+                                </p>
+                        </div>
+                        <div class="col-4 ps-0">
+                            <p class="mb-0 bg-success text-white px-2">Final Price</p>
+                                <p id="container-final-price" class="mt-0 fs-1 border border-success px-2">
+                                    
+                                </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <p class="mb-0 bg-danger text-white px-2">Disclaimer</p>
+                            <p id="container-discount-message" class="px-2"></p>
+                            <div><small>The data entered must be correct and truthful, the authority on board may require that you show your identification in order to check your age and verify that you have paid the correct amount. If this is not verified of information inserted is untruthful, fines may apply.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <button class=""></button>
+                </div>
+            </div>
+        </div>
+        <div id="error" class="d-none text-center">
+            <div class="row">
+                <div class="col-5 mx-auto bg-white rounded-4">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="./img/trenitalia-logo.jpg" alt="Trenitalia Logo" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-4 text-danger px-2 fs-3">ERROR: You have entered the same station as departure and arrival. Please check the data selected and try again.</p>
+                        </div>
+                    </div>
+                    <button id="tryAgain" class="btn btn-danger mb-3">Try Again!</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-danger btn-lg position-absolute top-50 start-50 translate-middle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="mainButton">
+            Buy tickets
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Ticket Selection</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Please select your departure and destination station.
+                </div>
+                <div class="input-group my-3">
+                    <label class="input-group-text w-25" for="departureStation">Departure</label>
+                        <select class="form-select" id="departureStation">                  
+                        <option value="0">Select one...</option>
+                        <option value="Bari">Bari</option>
+                        <option value="Firenze">Firenze</option>
+                        <option value="Genova">Genova</option>
+                        <option value="Milano">Milano</option>
+                        <option value="Napoli">Napoli</option>
+                        <option value="Roma">Roma</option>
+                        <option value="Torino">Torino</option>
+                        <option value="Venezia">Venezia</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text w-25" for="arrivalStation">Arrival</label>
+                    <select class="form-select" id="arrivalStation">
+                        <option value="0">Select one...</option>
+                        <option value="Bari">Bari</option>
+                        <option value="Firenze">Firenze</option>
+                        <option value="Genova">Genova</option>
+                        <option value="Milano">Milano</option>
+                        <option value="Napoli">Napoli</option>
+                        <option value="Roma">Roma</option>
+                        <option value="Torino">Torino</option>
+                        <option value="Venezia">Venezia</option>
+                    </select>
+                </div>
+                <div class="row d-flex my-3 container">
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="checkbox" id="adultCheck">
+                        <label class="form-check-label" for="adultCheck">
+                            I am - 18
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="checkbox" id="retiredCheck">
+                        <label class="form-check-label" for="retiredCheck">
+                            I am Retired
+                        </label>
+                    </div>
+                    <div class="fs-smallest">
+                        <small>*Not selecting any implies full payment.</small>
+                    </div>
+                </div>
+                <button class="btn btn-danger" data-bs-dismiss="offcanvas" aria-label="Close" id="buyButton">Buy Ticket</button>                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

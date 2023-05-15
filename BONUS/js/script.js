@@ -7,9 +7,7 @@ let regularPrice;
 let finalPrice;
 let adultCheck;
 let retiredCheck;
-
-
-let ticketCode = Math.random().toString(36).slice(7).toUpperCase()
+let ticketCode;
 
 const mainButton = document.getElementById('mainButton');
 const buyButton = document.getElementById('buyButton');
@@ -31,6 +29,7 @@ buyButton.addEventListener('click',
     arrStation = document.querySelector('#arrivalStation').value;
     adultCheck = document.getElementById('adultCheck').checked;
     retiredCheck = document.getElementById('retiredCheck').checked;
+    ticketCode = Math.random().toString(36).slice(7).toUpperCase();
     journey = depStation + ' ' + arrStation;
         if (adultCheck == true && retiredCheck == false){
                     discount = 0.806;
@@ -46,6 +45,7 @@ buyButton.addEventListener('click',
                     discountMessage = "You are not eligible for discounts"
                 }  
     mainButton.classList.add('d-none');
+    
         switch (journey) {
             case 'Roma Roma':
             case 'Napoli Napoli':
@@ -61,6 +61,7 @@ buyButton.addEventListener('click',
             case 'Roma Napoli':
             case 'Napoli Roma':
                 console.log("Roma Napoli");
+                document.getElementById('container-ticket-code').innerHTML = ticketCode;
                 document.getElementById('container-from').innerHTML = depStation;
                 document.getElementById('container-to').innerHTML = arrStation;
                 document.getElementById('container-distance').innerHTML = distanceMessage + " 191.63 KM";
@@ -457,8 +458,9 @@ buyButton.addEventListener('click',
     
 )
 
-buyButton.addEventListener('click',
+finishButton.addEventListener('click',
     function() {
-        
+        ticket.classList.add('d-none');
+        mainButton.classList.remove('d-none');
     }
 )

@@ -12,7 +12,7 @@ let ticketCode;
 const mainButton = document.getElementById('mainButton');
 const buyButton = document.getElementById('buyButton');
 const ticket = document.getElementById('ticket');
-const error = document.getElementById('error')
+const error = document.getElementById('error');
 const distanceMessage = 'The distance to be travelled between stations is';
 const price = 0.233;
 
